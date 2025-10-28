@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Escritores salvadoreños — Galería</title>
+  <style>
+    :root{
+      --bg:#c1f6ff; --card:#eef5f7; --accent:#097df1;
+      --muted:#666;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    body{
+      margin:0;
+      background: linear-gradient(180deg,#eef4fb 0%, var(--bg) 100%);
+      color:#111;
+    }
+    header{
+      padding:28px 20px;
+      text-align:center;
+    }
+    header h1{margin:0;font-size:1.6rem;}
+    header p{margin:6px 0 0;color:var(--muted);}
+
+    .container{
+      max-width:1100px;
+      margin:20px auto;
+      padding:0 18px 60px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:18px;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:12px;
+      box-shadow:0 6px 18px rgba(15,30,60,0.08);
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+      min-height:380px;
+    }
+
+    .card img{
+      width:100%;
+      height:190px;
+      object-fit:cover;
+      display:block;
+    }
+
+    .card .body{
+      padding:14px 16px 20px;
+      flex:1;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+
+    .card h2{margin:0;font-size:1.05rem;}
+    .meta{font-size:0.86rem;color:var(--muted);}
+
+    .bio{font-size:0.95rem;line-height:1.35;color:#222;}
+    .readmore{
+      margin-top:auto;
+      display:flex;
+      gap:8px;
+      align-items:center;
+      justify-content:space-between;
+    }
+
+    .btn{
+      background:var(--accent);
+      color:white;
+      border:none;
+      padding:8px 12px;
+      border-radius:8px;
+      cursor:pointer;
+      font-weight:600;
+    }
+
+    details summary{
+      cursor:pointer;
+      list-style:none;
+      outline:none;
+      font-weight:600;
+    }
+
+    footer{
+      text-align:center;
+      padding:26px 12px;
+      color:var(--muted);
+    }
+
+    /* responsive tweak for small screens */
+    @media (max-width:520px){
+      .card img{height:150px;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1> BIENVENIDOS </h1>
+     </h1> Cuatro escritores salvadoreños</h1>
+    <p> Esta es una biografías breves, un prólogo de ejemplo y por qué sus obras fueron famosas.</p>
+  </header>
+
+  <main class="container">
+    <!-- Roque Dalton -->
+    <article class="card">
+      <img src="img,/roque dalto.jpg" alt="Roque Dalton">
+      <div class="body">
+        <h2>Roque Dalton</h2>
+        <div class="meta">Poeta, ensayista y militante</div>
+        <div class="bio">
+          Roque Dalton fue uno de los poetas salvadoreños más influyentes del siglo XX. Su obra combina lirismo, ironía y compromiso político. Vivió exilios y participación activa en movimientos sociales, lo que marcó su poesía con una voz crítica y cercana al pueblo.
+        </div>
+
+        <details>
+          <summary>Prólogo (ejemplo)</summary>
+          <p style="margin-top:8px">
+            En estas páginas la palabra no se regala: exige mirar la ciudad, el barro, la humillación y la risa. El lector encontrará aquí versos que son puños y caricias a la vez —versos que quieren transformar la memoria en acción.
+          </p>
+        </details>
+
+        <div class="readmore">
+          <div style="font-size:0.9rem;color:var(--muted)">Libro destacado: <strong>Taberna y otros lugares</strong></div>
+          <button class="btn" onclick="alert('Roque Dalton: autor reconocido por su poesía comprometida y su mezcla de lo íntimo con lo político.')">¿Por qué famoso?</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Claribel Alegría -->
+    <article class="card">
+      <img src="img,/CLARIBEL-ALEGRIA2.jpg" alt="Claribel Alegría">
+      <div class="body">
+        <h2>Claribel Alegría (1924–2018)</h2>
+        <div class="meta">Poeta, novelista y traductora</div>
+        <div class="bio">
+          Claribel Alegría fue una voz central de la literatura centroamericana. Su obra aborda tanto la memoria personal como la colectiva; combinó poesía, cuentos y novelas. Recibió reconocimientos internacionales por su trayectoria.
+        </div>
+
+        <details>
+          <summary>Prólogo (ejemplo)</summary>
+          <p style="margin-top:8px">
+            Este libro nace del asombro cotidiano y de la necesidad de nombrar lo que duele. Estas páginas buscan no solo contar, sino convocar la memoria y la ternura entre las manos del lector.
+          </p>
+        </details>
+
+        <div class="readmore">
+          <div style="font-size:0.9rem;color:var(--muted)">Libro destacado: <strong>Insomnios y duermevelas</strong></div>
+          <button class="btn" onclick="alert('Claribel Alegría: conocida por su sensibilidad poética y su trabajo en memoria histórica y temas humanos.')">¿Por qué famoso?</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Manlio Argueta -->
+    <article class="card">
+      <img src="img,/manlio-argueta_.jpg" alt="Manlio Argueta">
+      <div class="body">
+        <h2>Manlio Argueta (1935– )</h2>
+        <div class="meta">Novelista, poeta y crítico</div>
+        <div class="bio">
+          Manlio Argueta se destacó por sus novelas que describen la vida rural y urbana salvadoreña, con un lenguaje vivo y comprometido socialmente. Su narrativa ha sido traducida y estudiada fuera del país.
+        </div>
+
+        <details>
+          <summary>Prólogo (ejemplo)</summary>
+          <p style="margin-top:8px">
+            Aquí se convoca la voz de la calle y de la cocina, el rumor de los patios. La novela que sigue busca ser espejo y denuncia: que la memoria del pueblo no se pierda entre el polvo de los años.
+          </p>
+        </details>
+
+        <div class="readmore">
+          <div style="font-size:0.9rem;color:var(--muted)">Libro destacado: <strong>Un día en la vida</strong></div>
+          <button class="btn" onclick="alert('Manlio Argueta: famoso por su capacidad de narrar la realidad social con ironía y lenguaje popular.')">¿Por qué famoso?</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Salarrué -->
+    <article class="card">
+      <img src="img,/Salarrue.jpg" alt="Salarrué">
+      <div class="body">
+        <h2>Salvador Salazar Arrué — Salarrué (1899–1975)</h2>
+        <div class="meta">Narrador, poeta y pintor</div>
+        <div class="bio">
+          Salarrué es uno de los narradores clásicos de El Salvador: autor de cuentos y relatos que rescatan la tradición oral, la figura campesina y la fantasía popular. Su prosa ha influido en generaciones posteriores.
+        </div>
+
+        <details>
+          <summary>Prólogo (ejemplo)</summary>
+          <p style="margin-top:8px">
+            Las historias aquí reunidas son como trozos de pueblo: cuentos que nacen de las plazas y las mañanas de humo. Siéntese el lector y deje que la voz antigua le cuente.
+          </p>
+        </details>
+
+        <div class="readmore">
+          <div style="font-size:0.9rem;color:var(--muted)">Libro destacado: <strong>El espejo de Lida Sal</strong></div>
+          <button class="btn" onclick="alert('Salarrué: recordado por su defensa de la tradición popular y su prosa lírica y sencilla.')">¿Por qué famoso?</button>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <small>creado y editado por: Madelim Benitez,Flor Martinez, Ariana Medina .</small>
+     <small>SECCION:G1-1</small>
+  </footer>
+
+  <script>
+    // pequeño script para mejorar accesibilidad de los detalles cuando se usan botones
+    document.querySelectorAll('.btn').forEach(b=>{
+      b.addEventListener('keydown', e=>{
+        if(e.key === 'Enter' || e.key === ' ') b.click();
+      });
+    });
+  </script>
+</body>
+</html>
